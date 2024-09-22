@@ -11,8 +11,9 @@ import superjson from "superjson";
 import { ZodError } from "zod";
 
 import type { Session } from "@acme/auth";
-import { auth, validateToken } from "@acme/auth";
+import { validateToken } from "@acme/auth";
 import { db } from "@acme/db/client";
+import { auth } from '@clerk/nextjs/server'
 
 /**
  * Isomorphic Session getter for API requests
